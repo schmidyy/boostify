@@ -13,6 +13,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
         <array key="SF-Pro-Text-Light.otf">
             <string>SFProText-Light</string>
         </array>
@@ -65,11 +68,11 @@
                                     <constraint firstAttribute="width" constant="260" id="S7q-Z6-WFU"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Izq-Z8-sdG">
-                                <rect key="frame" x="77" y="334" width="71" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a(n)..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Izq-Z8-sdG">
+                                <rect key="frame" x="77" y="334" width="99" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="90x-h5-zLf"/>
-                                    <constraint firstAttribute="width" constant="71" id="Vlp-0L-qve"/>
+                                    <constraint firstAttribute="width" constant="99" id="Vlp-0L-qve"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="19"/>
                                 <nil key="textColor"/>
@@ -116,6 +119,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fe8-EZ-CEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="876.81159420289862" y="36.684782608695656"/>
+        </scene>
+        <!--Web Modal View Controller-->
+        <scene sceneID="Yuj-0b-cf6">
+            <objects>
+                <viewController storyboardIdentifier="WebModal" id="anS-XJ-rQK" customClass="WebModalViewController" customModule="boostify_client" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pp6-L8-WnE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iG3-FQ-LLx">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RGb-62-WYR">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8z-CL-lC5">
+                                                <rect key="frame" x="8" y="8" width="56" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="56" id="D1x-Gr-pMJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="16"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cancelButtonTapped:" destination="anS-XJ-rQK" eventType="touchUpInside" id="7yg-OG-2cM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Indigo"/>
+                                        <constraints>
+                                            <constraint firstItem="y8z-CL-lC5" firstAttribute="leading" secondItem="RGb-62-WYR" secondAttribute="leading" constant="8" id="Gzr-gU-loN"/>
+                                            <constraint firstAttribute="height" constant="48" id="R8t-Ul-gJt"/>
+                                            <constraint firstAttribute="bottom" secondItem="y8z-CL-lC5" secondAttribute="bottom" constant="8" id="dLn-VI-JhD"/>
+                                            <constraint firstItem="y8z-CL-lC5" firstAttribute="top" secondItem="RGb-62-WYR" secondAttribute="top" constant="8" id="mYO-B3-g6T"/>
+                                        </constraints>
+                                    </view>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yex-Vt-YDq">
+                                        <rect key="frame" x="0.0" y="48" width="414" height="668"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="RGb-62-WYR" firstAttribute="top" secondItem="iG3-FQ-LLx" secondAttribute="top" id="5I8-mE-pM4"/>
+                                    <constraint firstAttribute="trailing" secondItem="RGb-62-WYR" secondAttribute="trailing" id="AV2-GP-lb0"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yex-Vt-YDq" secondAttribute="bottom" id="HBZ-i1-Owa"/>
+                                    <constraint firstItem="Yex-Vt-YDq" firstAttribute="top" secondItem="RGb-62-WYR" secondAttribute="bottom" id="UO5-EE-cCs"/>
+                                    <constraint firstItem="RGb-62-WYR" firstAttribute="leading" secondItem="iG3-FQ-LLx" secondAttribute="leading" id="cwu-MN-EPb"/>
+                                    <constraint firstItem="Yex-Vt-YDq" firstAttribute="leading" secondItem="iG3-FQ-LLx" secondAttribute="leading" id="tB5-4s-Q6r"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yex-Vt-YDq" secondAttribute="trailing" id="vK1-p0-avw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="Indigo"/>
+                        <constraints>
+                            <constraint firstItem="iG3-FQ-LLx" firstAttribute="top" secondItem="MfQ-wq-rN0" secondAttribute="top" id="CQ3-hZ-Nab"/>
+                            <constraint firstItem="MfQ-wq-rN0" firstAttribute="trailing" secondItem="iG3-FQ-LLx" secondAttribute="trailing" id="E2o-4G-7VI"/>
+                            <constraint firstItem="MfQ-wq-rN0" firstAttribute="bottom" secondItem="iG3-FQ-LLx" secondAttribute="bottom" id="eie-Kd-zte"/>
+                            <constraint firstItem="iG3-FQ-LLx" firstAttribute="leading" secondItem="MfQ-wq-rN0" secondAttribute="leading" id="ld9-55-YSs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MfQ-wq-rN0"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="iG3-FQ-LLx" id="VVe-Ef-Tdq"/>
+                        <outlet property="headerView" destination="RGb-62-WYR" id="1QR-wl-Kit"/>
+                        <outlet property="webView" destination="Yex-Vt-YDq" id="vED-Nt-QPE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="78j-no-quV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1928" y="-1028"/>
         </scene>
         <!--I'm a Merchant-->
         <scene sceneID="6Ea-cM-tbZ">
@@ -289,6 +368,9 @@
         <image name="welcome-screen" width="2048" height="1174"/>
         <namedColor name="Green">
             <color red="0.31400001049041748" green="0.72200000286102295" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Indigo">
+            <color red="0.36100000143051147" green="0.41600000858306885" blue="0.76899999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Indigo">
             <color red="0.36100000143051147" green="0.41600000858306885" blue="0.76899999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

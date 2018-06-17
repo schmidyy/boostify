@@ -9,8 +9,8 @@
 import UIKit
 
 enum Platform: String {
-	case Instagram, Twitter, Youtube, Snapchat
-	static let allValue: [Platform] = [.Instagram, .Twitter, .Youtube, .Snapchat]
+	case Instagram, Twitter, Youtube, Snapchat, Facebook
+	static let allValue: [Platform] = [.Instagram, .Facebook, .Twitter, .Youtube, .Snapchat]
 }
 
 class PlatformTableViewCell: UITableViewCell {

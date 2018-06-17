@@ -8,6 +8,8 @@
 
 import UIKit
 
+let defaults = UserDefaults.standard
+
 struct System {
 	static func clearNavigationBar(forBar navBar: UINavigationBar) {
 		navBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)

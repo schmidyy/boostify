@@ -14,6 +14,7 @@
 		2758C5D520D58B6400385A4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2758C5D320D58B6400385A4E /* LaunchScreen.storyboard */; };
 		2758C5DD20D58E5300385A4E /* Colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2758C5DC20D58E5300385A4E /* Colours.xcassets */; };
 		2758C5F120D59E6D00385A4E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758C5F020D59E6D00385A4E /* WelcomeViewController.swift */; };
+		2764EBDD20D6F1580040FCA1 /* WebModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2764EBDC20D6F1580040FCA1 /* WebModalViewController.swift */; };
 		278DA89820D5ACE100B74680 /* MerchantIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278DA89720D5ACE100B74680 /* MerchantIntroViewController.swift */; };
 		278DA89A20D5ACF100B74680 /* InfluencerIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278DA89920D5ACF100B74680 /* InfluencerIntroViewController.swift */; };
 		278DA89C20D5FD5B00B74680 /* PlatformTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278DA89B20D5FD5B00B74680 /* PlatformTableViewCell.swift */; };
@@ -33,6 +34,7 @@
 		2758C5ED20D59D7500385A4E /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
 		2758C5EE20D59D7500385A4E /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		2758C5F020D59E6D00385A4E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		2764EBDC20D6F1580040FCA1 /* WebModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebModalViewController.swift; sourceTree = "<group>"; };
 		278DA89620D5AA2800B74680 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
 		278DA89720D5ACE100B74680 /* MerchantIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantIntroViewController.swift; sourceTree = "<group>"; };
 		278DA89920D5ACF100B74680 /* InfluencerIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfluencerIntroViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				2758C5F220D59E7500385A4E /* View Controllers */,
 				2758C5EF20D59E4600385A4E /* Views */,
+				2764EBE020D6F94E0040FCA1 /* Model */,
 				2758C5F320D59E8C00385A4E /* Support */,
 				2758C5EB20D59CE900385A4E /* Ressources */,
 				2758C5D620D58B6400385A4E /* Info.plist */,
@@ -130,6 +133,7 @@
 				2758C5F020D59E6D00385A4E /* WelcomeViewController.swift */,
 				278DA89720D5ACE100B74680 /* MerchantIntroViewController.swift */,
 				278DA89920D5ACF100B74680 /* InfluencerIntroViewController.swift */,
+				2764EBDC20D6F1580040FCA1 /* WebModalViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -141,6 +145,14 @@
 				278DA89D20D5FFFE00B74680 /* System.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		2764EBE020D6F94E0040FCA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		E0685827B2A03A38946A5518 /* Pods */ = {
@@ -266,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				278DA89C20D5FD5B00B74680 /* PlatformTableViewCell.swift in Sources */,
+				2764EBDD20D6F1580040FCA1 /* WebModalViewController.swift in Sources */,
 				278DA89E20D5FFFE00B74680 /* System.swift in Sources */,
 				2758C5F120D59E6D00385A4E /* WelcomeViewController.swift in Sources */,
 				278DA89A20D5ACF100B74680 /* InfluencerIntroViewController.swift in Sources */,

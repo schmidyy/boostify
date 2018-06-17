@@ -53,24 +53,33 @@ extension InfluencerIntroViewController: UITableViewDelegate, UITableViewDataSou
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let platform = Platform.allValue[indexPath.row]
+		
 		let cell = tableView.dequeueReusableCell(withIdentifier: "platformCell", for: indexPath) as! PlatformTableViewCell
-		cell.formatCell(forPlatform: Platform.allValue[indexPath.row])
+		cell.formatCell(forPlatform: platform)
 		cell.selectionStyle = .none
+		
+		if let _ = defaults.value(forKey: platform.rawValue) {
+			selectedPlatforms[platform] = true
+			cell.accessoryType = .checkmark
+		}
+		
 		return cell
 	}
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		let platform = Platform.allValue[indexPath.row]
-		if let cell = tableView.cellForRow(at: indexPath) as? PlatformTableViewCell, cell.canSelectPlatform(platform) {
-			if cell.accessoryType == .none {
-				cell.accessoryType = .checkmark
-				selectedPlatforms[platform] = true
-			} else {
-				cell.accessoryType = .none
-				selectedPlatforms[platform] = false
-				
-			}
-		}
+		let webModalViewController = storyboard?.instantiateViewController(withIdentifier: "WebModal") as! WebModalViewController
+		webModalViewController.delegate = self
+		present(webModalViewController, animated: true, completion: nil)
 	}
+}
+
+extension InfluencerIntroViewController: WebModalDelegate {
+	func didReceiveInstagramAccessToken(token: String) {
+		print(token)
+		defaults.set(token, forKey: "Instagram")
+		platformTableView.reloadData()
+	}
+	
 	
 }
