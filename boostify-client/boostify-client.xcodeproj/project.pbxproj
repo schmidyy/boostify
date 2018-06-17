@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2758C5C820D58B6300385A4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758C5C720D58B6300385A4E /* AppDelegate.swift */; };
+		2758C5CD20D58B6300385A4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2758C5CB20D58B6300385A4E /* Main.storyboard */; };
+		2758C5D020D58B6300385A4E /* boostify_client.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2758C5CE20D58B6300385A4E /* boostify_client.xcdatamodeld */; };
+		2758C5D220D58B6400385A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2758C5D120D58B6400385A4E /* Assets.xcassets */; };
+		2758C5D520D58B6400385A4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2758C5D320D58B6400385A4E /* LaunchScreen.storyboard */; };
+		2758C5DD20D58E5300385A4E /* Colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2758C5DC20D58E5300385A4E /* Colours.xcassets */; };
+		2758C5F120D59E6D00385A4E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758C5F020D59E6D00385A4E /* WelcomeViewController.swift */; };
+		278DA89820D5ACE100B74680 /* MerchantIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278DA89720D5ACE100B74680 /* MerchantIntroViewController.swift */; };
+		278DA89A20D5ACF100B74680 /* InfluencerIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278DA89920D5ACF100B74680 /* InfluencerIntroViewController.swift */; };
+		278DA89C20D5FD5B00B74680 /* PlatformTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278DA89B20D5FD5B00B74680 /* PlatformTableViewCell.swift */; };
+		278DA89E20D5FFFE00B74680 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278DA89D20D5FFFE00B74680 /* System.swift */; };
+		6EB73C789C4049E449CD0C30 /* Pods_boostify_client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C358CEF115A8A7B7E22379 /* Pods_boostify_client.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2758C5C420D58B6300385A4E /* boostify-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "boostify-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2758C5C720D58B6300385A4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2758C5CC20D58B6300385A4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2758C5CF20D58B6300385A4E /* boostify_client.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = boostify_client.xcdatamodel; sourceTree = "<group>"; };
+		2758C5D120D58B6400385A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2758C5D420D58B6400385A4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2758C5D620D58B6400385A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2758C5DC20D58E5300385A4E /* Colours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colours.xcassets; sourceTree = "<group>"; };
+		2758C5ED20D59D7500385A4E /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
+		2758C5EE20D59D7500385A4E /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		2758C5F020D59E6D00385A4E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		278DA89620D5AA2800B74680 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		278DA89720D5ACE100B74680 /* MerchantIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantIntroViewController.swift; sourceTree = "<group>"; };
+		278DA89920D5ACF100B74680 /* InfluencerIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfluencerIntroViewController.swift; sourceTree = "<group>"; };
+		278DA89B20D5FD5B00B74680 /* PlatformTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformTableViewCell.swift; sourceTree = "<group>"; };
+		278DA89D20D5FFFE00B74680 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		546DC679151DDDB0CC862A6C /* Pods-boostify-client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boostify-client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-boostify-client/Pods-boostify-client.debug.xcconfig"; sourceTree = "<group>"; };
+		A4C358CEF115A8A7B7E22379 /* Pods_boostify_client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_boostify_client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2019295512935F0DFD4B58 /* Pods-boostify-client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boostify-client.release.xcconfig"; path = "Pods/Target Support Files/Pods-boostify-client/Pods-boostify-client.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2758C5C120D58B6300385A4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EB73C789C4049E449CD0C30 /* Pods_boostify_client.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F6CD4464E55E43D91480BCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4C358CEF115A8A7B7E22379 /* Pods_boostify_client.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2758C5BB20D58B6300385A4E = {
+			isa = PBXGroup;
+			children = (
+				2758C5C620D58B6300385A4E /* boostify-client */,
+				2758C5C520D58B6300385A4E /* Products */,
+				E0685827B2A03A38946A5518 /* Pods */,
+				1F6CD4464E55E43D91480BCB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2758C5C520D58B6300385A4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2758C5C420D58B6300385A4E /* boostify-client.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2758C5C620D58B6300385A4E /* boostify-client */ = {
+			isa = PBXGroup;
+			children = (
+				2758C5F220D59E7500385A4E /* View Controllers */,
+				2758C5EF20D59E4600385A4E /* Views */,
+				2758C5F320D59E8C00385A4E /* Support */,
+				2758C5EB20D59CE900385A4E /* Ressources */,
+				2758C5D620D58B6400385A4E /* Info.plist */,
+			);
+			path = "boostify-client";
+			sourceTree = "<group>";
+		};
+		2758C5EB20D59CE900385A4E /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				2758C5EC20D59CFA00385A4E /* Fonts */,
+				2758C5D120D58B6400385A4E /* Assets.xcassets */,
+				2758C5DC20D58E5300385A4E /* Colours.xcassets */,
+				2758C5CE20D58B6300385A4E /* boostify_client.xcdatamodeld */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		2758C5EC20D59CFA00385A4E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2758C5ED20D59D7500385A4E /* SF-Pro-Text-Light.otf */,
+				2758C5EE20D59D7500385A4E /* SF-Pro-Text-Regular.otf */,
+				278DA89620D5AA2800B74680 /* SF-Pro-Text-Bold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2758C5EF20D59E4600385A4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2758C5CB20D58B6300385A4E /* Main.storyboard */,
+				2758C5D320D58B6400385A4E /* LaunchScreen.storyboard */,
+				278DA89B20D5FD5B00B74680 /* PlatformTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2758C5F220D59E7500385A4E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2758C5F020D59E6D00385A4E /* WelcomeViewController.swift */,
+				278DA89720D5ACE100B74680 /* MerchantIntroViewController.swift */,
+				278DA89920D5ACF100B74680 /* InfluencerIntroViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2758C5F320D59E8C00385A4E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				2758C5C720D58B6300385A4E /* AppDelegate.swift */,
+				278DA89D20D5FFFE00B74680 /* System.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		E0685827B2A03A38946A5518 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				546DC679151DDDB0CC862A6C /* Pods-boostify-client.debug.xcconfig */,
+				EA2019295512935F0DFD4B58 /* Pods-boostify-client.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2758C5C320D58B6300385A4E /* boostify-client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2758C5D920D58B6400385A4E /* Build configuration list for PBXNativeTarget "boostify-client" */;
+			buildPhases = (
+				2A6E7151CE86E687A5071DE3 /* [CP] Check Pods Manifest.lock */,
+				2758C5C020D58B6300385A4E /* Sources */,
+				2758C5C120D58B6300385A4E /* Frameworks */,
+				2758C5C220D58B6300385A4E /* Resources */,
+				18B07D82D345D12C082CF6C7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "boostify-client";
+			productName = "boostify-client";
+			productReference = 2758C5C420D58B6300385A4E /* boostify-client.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2758C5BC20D58B6300385A4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Mat Schmid";
+				TargetAttributes = {
+					2758C5C320D58B6300385A4E = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 2758C5BF20D58B6300385A4E /* Build configuration list for PBXProject "boostify-client" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2758C5BB20D58B6300385A4E;
+			productRefGroup = 2758C5C520D58B6300385A4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2758C5C320D58B6300385A4E /* boostify-client */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2758C5C220D58B6300385A4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2758C5D520D58B6400385A4E /* LaunchScreen.storyboard in Resources */,
+				2758C5D220D58B6400385A4E /* Assets.xcassets in Resources */,
+				2758C5CD20D58B6300385A4E /* Main.storyboard in Resources */,
+				2758C5DD20D58E5300385A4E /* Colours.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18B07D82D345D12C082CF6C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-boostify-client/Pods-boostify-client-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-boostify-client/Pods-boostify-client-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A6E7151CE86E687A5071DE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-boostify-client-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2758C5C020D58B6300385A4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				278DA89C20D5FD5B00B74680 /* PlatformTableViewCell.swift in Sources */,
+				278DA89E20D5FFFE00B74680 /* System.swift in Sources */,
+				2758C5F120D59E6D00385A4E /* WelcomeViewController.swift in Sources */,
+				278DA89A20D5ACF100B74680 /* InfluencerIntroViewController.swift in Sources */,
+				2758C5D020D58B6300385A4E /* boostify_client.xcdatamodeld in Sources */,
+				2758C5C820D58B6300385A4E /* AppDelegate.swift in Sources */,
+				278DA89820D5ACE100B74680 /* MerchantIntroViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2758C5CB20D58B6300385A4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2758C5CC20D58B6300385A4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2758C5D320D58B6400385A4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2758C5D420D58B6400385A4E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2758C5D720D58B6400385A4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2758C5D820D58B6400385A4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2758C5DA20D58B6400385A4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 546DC679151DDDB0CC862A6C /* Pods-boostify-client.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BNS58ZR5ZP;
+				INFOPLIST_FILE = "boostify-client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matschmid.boostify-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2758C5DB20D58B6400385A4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA2019295512935F0DFD4B58 /* Pods-boostify-client.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BNS58ZR5ZP;
+				INFOPLIST_FILE = "boostify-client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matschmid.boostify-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2758C5BF20D58B6300385A4E /* Build configuration list for PBXProject "boostify-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2758C5D720D58B6400385A4E /* Debug */,
+				2758C5D820D58B6400385A4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2758C5D920D58B6400385A4E /* Build configuration list for PBXNativeTarget "boostify-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2758C5DA20D58B6400385A4E /* Debug */,
+				2758C5DB20D58B6400385A4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2758C5CE20D58B6300385A4E /* boostify_client.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2758C5CF20D58B6300385A4E /* boostify_client.xcdatamodel */,
+			);
+			currentVersion = 2758C5CF20D58B6300385A4E /* boostify_client.xcdatamodel */;
+			path = boostify_client.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2758C5BC20D58B6300385A4E /* Project object */;
+}
