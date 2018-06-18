@@ -19,6 +19,7 @@
 		278DA89A20D5ACF100B74680 /* InfluencerIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278DA89920D5ACF100B74680 /* InfluencerIntroViewController.swift */; };
 		278DA89C20D5FD5B00B74680 /* PlatformTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278DA89B20D5FD5B00B74680 /* PlatformTableViewCell.swift */; };
 		278DA89E20D5FFFE00B74680 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278DA89D20D5FFFE00B74680 /* System.swift */; };
+		27E5F28D20D7143200537B14 /* InstagramFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5F28C20D7143200537B14 /* InstagramFetcher.swift */; };
 		6EB73C789C4049E449CD0C30 /* Pods_boostify_client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C358CEF115A8A7B7E22379 /* Pods_boostify_client.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		278DA89920D5ACF100B74680 /* InfluencerIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfluencerIntroViewController.swift; sourceTree = "<group>"; };
 		278DA89B20D5FD5B00B74680 /* PlatformTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformTableViewCell.swift; sourceTree = "<group>"; };
 		278DA89D20D5FFFE00B74680 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		27E5F28C20D7143200537B14 /* InstagramFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InstagramFetcher.swift; path = "boostify-client/New Group/InstagramFetcher.swift"; sourceTree = SOURCE_ROOT; };
 		546DC679151DDDB0CC862A6C /* Pods-boostify-client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boostify-client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-boostify-client/Pods-boostify-client.debug.xcconfig"; sourceTree = "<group>"; };
 		A4C358CEF115A8A7B7E22379 /* Pods_boostify_client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_boostify_client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2019295512935F0DFD4B58 /* Pods-boostify-client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boostify-client.release.xcconfig"; path = "Pods/Target Support Files/Pods-boostify-client/Pods-boostify-client.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,7 +90,7 @@
 			children = (
 				2758C5F220D59E7500385A4E /* View Controllers */,
 				2758C5EF20D59E4600385A4E /* Views */,
-				2764EBE020D6F94E0040FCA1 /* Model */,
+				27E5F28E20D7145400537B14 /* Model */,
 				2758C5F320D59E8C00385A4E /* Support */,
 				2758C5EB20D59CE900385A4E /* Ressources */,
 				2758C5D620D58B6400385A4E /* Info.plist */,
@@ -147,9 +149,10 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		2764EBE020D6F94E0040FCA1 /* Model */ = {
+		27E5F28E20D7145400537B14 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				27E5F28C20D7143200537B14 /* InstagramFetcher.swift */,
 			);
 			name = Model;
 			path = "New Group";
@@ -284,6 +287,7 @@
 				278DA89A20D5ACF100B74680 /* InfluencerIntroViewController.swift in Sources */,
 				2758C5D020D58B6300385A4E /* boostify_client.xcdatamodeld in Sources */,
 				2758C5C820D58B6300385A4E /* AppDelegate.swift in Sources */,
+				27E5F28D20D7143200537B14 /* InstagramFetcher.swift in Sources */,
 				278DA89820D5ACE100B74680 /* MerchantIntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

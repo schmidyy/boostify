@@ -31,7 +31,7 @@ class WebModalViewController: UIViewController, WKUIDelegate, WKNavigationDelega
     }
 	
 	func loadInstagramAuth() {
-		let authURL = "https://api.instagram.com/oauth/authorize/?client_id=\(Instagram.clientID)&redirect_uri=\(Instagram.redirectURI)&response_type=token&scope=\(Instagram.scope)&DEBUG=True"
+		let authURL = InstagramFetcher.generateAuthURL()
 		let urlRequest = URLRequest(url: URL(string: authURL)!)
 		webView.load(urlRequest)
 	}
@@ -54,12 +54,4 @@ class WebModalViewController: UIViewController, WKUIDelegate, WKNavigationDelega
 			}
 		}
 	}
-}
-
-struct Instagram {
-	static let authURL = "https://api.instagram.com/oauth/authorize/"
-	static let clientID = "af496871eec9400287ea6baf8226a31b"
-	static let clientSecret = "281e7889d9fa4c09953c7e9edc1aeb61"
-	static let redirectURI = "http://matschmid.me/"
-	static let scope = "basic+public_content"
 }
